@@ -101,16 +101,18 @@ public class RegisterPage {
 		driver.findElement(By.xpath("(//span[@class='k-select'])[1]")).click();
 
 		while (true) {
-			String month = "May 2018";
+			String month = "June 2020";
 			String mon = driver.findElement(By.xpath("//a[@class='k-link k-nav-fast']")).getText();
 			if (mon.contentEquals(month)) {
 				break;
 			} else {
-				driver.findElement(By.xpath("//span[@class='k-icon k-i-arrow-60-left']")).click();
+				driver.findElement(By.xpath("//a[@class='k-link k-nav-prev']")).click();
 				Thread.sleep(3000);
 			} // end if
 
-			driver.findElement(By.xpath("//table[@class='k-content k-month']//tbody/tr[1]/td[5]/a")).click();
+			driver.findElement(
+					By.xpath("//div[@id='DateOfBirth_dateview']//div[1]//div[2]//table//tbody//tr[4]//td[3]//a"))
+					.click();
 		} // end while
 	}// end birthdate
 

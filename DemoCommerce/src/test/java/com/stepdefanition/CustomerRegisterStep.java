@@ -10,6 +10,7 @@ import cucumber.api.java.en.When;
 public class CustomerRegisterStep extends Base {
 	RegisterPage rp;
 
+
 	@Given("^user on homepage$")
 	public void user_on_homepage() throws Throwable {
 		getDriver();

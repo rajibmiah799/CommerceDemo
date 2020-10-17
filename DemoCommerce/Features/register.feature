@@ -9,7 +9,7 @@ Feature: new customers add
     And user click on customers redio button
     And user click new user button
     And user enter email
-    And user enter password
+    And user enter password 
     And user enter first name
     And user enter last name
     And user click gender male redio button
